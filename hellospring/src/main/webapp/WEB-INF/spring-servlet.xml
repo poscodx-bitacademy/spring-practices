@@ -10,7 +10,14 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/board/**"/>
+			<bean class="com.poscodx.hellospring.interceptor.MyInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
 	<context:annotation-config />
 	<context:component-scan base-package="com.poscodx.hellospring.controller" />
 
