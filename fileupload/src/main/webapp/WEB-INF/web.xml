@@ -5,6 +5,16 @@
 	version="2.5">
 	<display-name>fileupload</display-name>
 	
+	<context-param>
+	     <param-name>contextConfigLocation</param-name>
+	     <param-value>classpath:applicationContext.xml</param-value>
+	</context-param> 	
+	
+	<!-- ContextLoad Listener -->
+	<listener>
+    	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+		
 	<!-- Dispatcher Servlet -->	
 	<servlet>
 		<servlet-name>spring</servlet-name>
