@@ -4,8 +4,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HighSchoolRapper2 implements CompactDisc {
+	private String title = "붕붕";
+	private String artist = "김하온";
+	
 	@Override
 	public String play() {
-		return "Playing 붕붕 by 김하온";
+		return "Playing " + title + " by " + artist;
 	}
 }

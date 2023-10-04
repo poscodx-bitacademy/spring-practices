@@ -14,8 +14,19 @@
 		|-- CDPlayer.java
 		|-- CompactDisc.java
 		|-- HighSchoolRapper.java
+
+
+	com.poscodx.container.config.videosystem
+		|-- DVDPlayerConfig.java
+	com.poscodx.container.videosystem
+		|-- DVDPlayer.java
+		|-- DigitalVideoDisc.java
+		|-- Avengers.java
 	
 [src/main/resources]
+	com.poscodx.container.config.videosystem
+		|-- applicationContext.xml
+
 	com.poscodx.container.config.soundsystem
 		|-- applicationContext.xml
 
