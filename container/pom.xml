@@ -7,7 +7,7 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>aoptest</artifactId>
+	<artifactId>container</artifactId>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,18 +24,9 @@
 			<artifactId>spring-context</artifactId>
 			<version>${org-springframework-version}</version>
 		</dependency>
-		
-		<!-- spring aspect -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aspects</artifactId>
-			<version>${org-springframework-version}</version>
-		</dependency>
-				
 	</dependencies>
 	
 	<build>
-		<finalName>aoptest</finalName>
-	</build>
-		
+		<finalName>container</finalName>
+	</build>	
 </project>
