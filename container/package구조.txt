@@ -8,18 +8,24 @@
 		|-- XmlConfigTest.java
 		|-- JavaConfigTest.java
 		
+	com.poscodx.container.config.soundsystem
+		|-- CDPlayerConfig.java		
 	com.poscodx.container.soundsystem
-	com.poscodx.container.videosystem
-
+		|-- CDPlayer.java
+		|-- CompactDisc.java
+		|-- HighSchoolRapper.java
 	
 [src/main/resources]
-	com.poscodx.container.user
+	com.poscodx.container.config.soundsystem
+		|-- applicationContext.xml
+
+	com.poscodx.container.config.user
 		|-- applicationContext01.xml (Auto)
 		|-- applicationContext02.xml (Explicit)
 		 
-
-
-
-
 [src/test/java]
+	com.poscodx.container.soundsystem
+		|-- CDPlayerXmlConfigTest.java
+		|-- CDPlayerJavaConfigTest.java
+		
 [src/test/resources]

@@ -9,7 +9,7 @@ public class User {
 	private Long no = 0L;
 	private String name = "둘리";
 	private Friend friend = null;
-	private List<String> friends;
+	private List<String> friends = null;
 	
 	public User() {
 	}
