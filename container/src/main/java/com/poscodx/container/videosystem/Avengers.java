@@ -6,6 +6,6 @@ public class Avengers implements DigitalVideoDisc {
 	
 	@Override
 	public String play() {
-		return "playing Movie " + studio + "'s " + title;
+		return "Playing Movie " + studio + "'s " + title;
 	}
 }
