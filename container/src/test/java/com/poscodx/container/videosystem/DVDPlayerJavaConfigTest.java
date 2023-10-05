@@ -26,7 +26,10 @@ public class DVDPlayerJavaConfigTest {
 	// 설정 클래스의 빈생성 메소드의 이름으로 Qulify 하기
 	@Qualifier("dvdPlayer02")
 	DVDPlayer dvdPlayer02;
-	
+
+	@Autowired
+	@Qualifier("dvdPlayer03")
+	DVDPlayer dvdPlayer03;
 	
 	@Test
 	public void testDvdPlayer01NotNull() {
@@ -39,7 +42,12 @@ public class DVDPlayerJavaConfigTest {
 	}
 
 	@Test
+	public void testDvdPlayer03NotNull() {
+		assertNotNull(dvdPlayer03);
+	}
+
+	@Test
 	public void testPlay() {
-		assertEquals("Playing Movie MARVEL's Avengers", dvdPlayer02.play());
+		assertEquals("Playing Movie MARVEL's Avengers", dvdPlayer03.play());
 	}
 }
