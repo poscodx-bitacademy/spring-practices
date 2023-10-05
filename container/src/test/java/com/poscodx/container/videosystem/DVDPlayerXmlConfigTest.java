@@ -67,6 +67,18 @@ public class DVDPlayerXmlConfigTest {
 	@Qualifier("dvdPlayer2")
 	DVDPlayer dvdPlayer2;
 
+	@Autowired
+	@Qualifier("dvdPlayer3")
+	DVDPlayer dvdPlayer3;
+
+	@Autowired
+	@Qualifier("dvdPlayer4")
+	DVDPlayer dvdPlayer4;
+
+	@Autowired
+	@Qualifier("dvdPlayer5")
+	DVDPlayer dvdPlayer5;
+	
 	@Test
 	public void testPlay1() {
 		assertEquals("Playing Movie MARVEL's Iron Man", dvdPlayer1.play());
@@ -76,8 +88,21 @@ public class DVDPlayerXmlConfigTest {
 	public void testPlay2() {
 		assertEquals("Playing Movie MARVEL's Iron Man", dvdPlayer2.play());
 	}
-	
-	
+
+	@Test
+	public void testPlay3() {
+		assertEquals("Playing Movie MARVEL's Iron Man", dvdPlayer3.play());
+	}
+
+	@Test
+	public void testPlay4() {
+		assertEquals("Playing Movie MARVEL's Iron Man", dvdPlayer4.play());
+	}
+
+	@Test
+	public void testPlay5() {
+		assertEquals("Playing Movie MARVEL's Iron Man", dvdPlayer5.play());
+	}
 	
 	///////////////////////////////////////////////
 	
